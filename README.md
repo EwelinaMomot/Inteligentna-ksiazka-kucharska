@@ -49,8 +49,8 @@ Dzięki temu możliwe jest elastyczne wykorzystanie zasobów i dokładne dopasow
 
 ### Działanie systemu:
 
-Prolog sumuje dostępne ilości mleka i wody (270 + 100 = 370 ml), co jest więcej niż wymagana ilość mleka (300 ml).  
-System uzupełnia mleko bazowe o wodę jako zamiennik, ale ponieważ jest jej nadmiar, proporcjonalnie dopasowuje składniki do przepisu na 4 porcje.
+System uwzględnia dostępne ilości mleka i jego zamiennika-wody i bada trzy scenariusze dopasowania do przepisu.  
+ Finalnie uzupełnia mleko bazowe o wodę jako zamiennik, ale ponieważ jest jej nadmiar, proporcjonalnie dopasowuje składniki do przepisu na 4 porcje.
 
 ---
 
