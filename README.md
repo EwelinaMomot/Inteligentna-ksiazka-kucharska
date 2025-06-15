@@ -95,10 +95,11 @@ inteligentna-ksiazka-kucharska/
       └ picture.jpg
  └ app.py
  └ baza.pl   # baza faktów
- └ reguly.pl #reguły Prolog
+ └ reguly.pl # reguły Prolog
  └ templates/
     └ index.html 
  └ README.md
+
 
  ## Instalacja i uruchomienie
 
