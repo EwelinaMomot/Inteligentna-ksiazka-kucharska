@@ -1,0 +1,148 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Książka kucharska</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Meow+Script&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+
+</head>
+<body>
+    
+    {% if not przepisy_100 and not brakujace_przepisy and not czy_znaleziono_przepisy  %}
+    <form method="post">
+
+        {% if not liczba_produktow %}
+
+        <h1 class="home_page">Inteligentna książka kucharska</h1>
+        <div id="home_page_container">
+        <h3 class="opis_programu">Podaj produkty, które masz w lodówce, a zaproponuję jakie potrawy możesz z nich zrobić!<br><br>
+            Jeżeli z Twoich produktów nie uda się nic ugotować,<br> zaproponuję Ci co możesz dokupić aby ugotować któryś z przepisów. <br><br>
+         uwzględniam liczbę porcji, a także zamienniki potrzebnych składników!</h3>
+
+        <label for="liczba">Ile składników chcesz użyć?</label>
+        <input type="number" name="liczba_produktow" min="1" required>
+        <input type="hidden" name="action" value="pokaz_przepisy">
+        <button  type="submit">Dalej</button>
+
+        {% else %}
+
+        <h1 class="second_page">Inteligentna książka kucharska</h1>
+        <div id="second_page_container">
+        <h2>Wprowadź swoje produkty, oraz ich ilość w gramach</h2>
+        <h4>Nie używaj polskich znaków, pisz w liczbie pojedynczej:)</h4>
+        <input type="hidden" name="liczba_produktow" value="{{ liczba_produktow }}">
+
+        <div id="skladniki-container">
+            {% for i in range(liczba_produktow) %}
+            <div class="skladnik" {% if i >= 3 %}style="display:none;"{% endif %}>
+                <h3>Składnik {{ i+1 }}</h3>
+                <label for="produkt_{{i}}">Nazwa:</label>
+                <input type="text" name="produkt_{{i}}" required>
+                <label for="ilosc_{{i}}">Ilość:</label>
+                <input type="number" name="ilosc_{{i}}" min="1" required>
+                <br><br>
+            </div>
+            {% endfor %}
+        </div>
+
+        <button type="button" id="prev">Poprzedni</button>
+        <button type="button" id="next">Następny</button>
+
+        <br><br>
+        <div id="porcje">
+        <label for="porcje">Liczba porcji:</label>
+        <input type="number" name="porcje" value="0" min="1" required>
+        <br><br>
+
+        <button id="pokaz_przepisy" type="submit">Pokaż przepisy</button>
+        </div>
+        </div>
+        {% endif %}
+
+    </form>
+    {% endif %}
+
+    {% if przepisy_100 and not czy_znaleziono_przepisy %}
+
+    <h1 class="second_page">Inteligentna książka kucharska</h1>
+    <h3 style="font-weight: 400; margin-bottom: 0px; font-size: 20px;">Przepisy, na które masz składniki:</h3>
+    <ol>
+
+     {% for procent, nazwa in przepisy_100 %}
+    <li class="przepis">
+        <strong>{{ nazwa }}</strong> 
+       <ul>
+        {% for skladnik, ilosc in przepisy_skladniki[nazwa] %}
+            <li>{{ skladnik }} - {{ ilosc|round(0) }} gram</li>
+        {% endfor %}
+        </ul>
+
+        <button
+        type="button"
+        class="pokaz_opis toggle-opis"
+        id="btn-{{ loop.index }}"
+        onclick='openModal({{ opisy_przepisy.get(nazwa, "Brak opisu") | tojson }})'
+        >
+        Pokaż przepis
+        </button>
+
+        <div id="opis-{{ loop.index }}" class="opis-przepisu" style="display: none; margin-top: 5px">
+            {{ opisy_przepisy.get(nazwa, "Brak opisu") }}
+        </div>
+    </li>
+    {% endfor %}
+
+    </ol>
+
+    {% if opis_przepisu %}
+        <h4>Opis przepisu:</h4>
+        <p>{{ opis_przepisu }}</p>
+    {% endif %}
+
+
+    <h3 class="text"> Chcesz mieć większy wybór?<br> Zobacz przepisy do których brakuje Ci jednego lub dwóch produktów :)</h3>
+    <form method="post">
+        <input type="hidden" name="action" value="pokaz_braki">
+        <button type="submit">Pokaż przepisy</button>
+    </form>
+    {% endif %}
+
+    {% if czy_znaleziono_przepisy %}
+    <h1 class="second_page">Inteligentna książka kucharska</h1>
+    <h3 class="text"> Niestety nie mamy przepisów,które możesz w całości wykonać ze swoich produktów...<br><br> Zobacz przepisy do których brakuje Ci jednego lub dwóch składników :)</h3>
+    <form method="post">
+        <input type="hidden" name="action" value="pokaz_braki">
+        <button type="submit">Pokaż przepisy</button>
+    {% endif %}
+
+
+    {% if brakujace_przepisy %}
+        <h1 class="second_page">Inteligentna książka kucharska</h1>
+        <h2>Przepisy, do których wystarczy dokupić jeden lub dwa składniki:</h2>
+        <ol>
+            {% for nazwa, braki in brakujace_przepisy[:10] %}
+            <li class="przepis">{{ nazwa }} — potrzebujesz: {{ braki|join(" gram, ") }} gram</li>
+            {% endfor %}
+        </ol>
+    {% endif %}
+
+   
+<div id="modal" class="modal-background" style="display:none;">
+  
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <div id="modal-text"></div>
+  </div>
+</div>
+
+</body>
+
+
+
+</html>
