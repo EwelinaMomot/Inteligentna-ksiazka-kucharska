@@ -86,7 +86,7 @@ Takie rozwiązanie umożliwia elastyczne wykorzystanie zamienników oraz dopasow
 ---
 
 ## Struktura projektu 📁
-
+```
 inteligentna-ksiazka-kucharska/
  └ static/
     └ script.js
@@ -99,7 +99,7 @@ inteligentna-ksiazka-kucharska/
  └ templates/
     └ index.html 
  └ README.md
-
+```
 
  ## Instalacja i uruchomienie
 
