@@ -8,12 +8,15 @@ System oblicza procent zgodności przepisu na podstawie dostępnych składników
 Pokazuje przepisy, które można przygotować w całości, a także te, do których brakuje jednego lub dwóch składników.
 Dla tych drugich wyświetla listę brakujących produktów wraz z wymaganymi ilościami, co pozwala użytkownikowi na łatwe uzupełnienie zapasów i większy wybór potraw do przygotowania.
 
-## Funkcjonalność interfejsu użytkownika
-Aplikacja uwzględnia wygodę użytkownika poprzez aspekty wizualne, takie jak:
+## Funkcjonalności
 
-- Pokazywanie części pól do wpisania składników na stronie formularza i możliwość przewijania do kolejnych grup, gdy liczba składników jest duża.
-- Wyświetlanie szczegółowego opisu przepisu w modalnym oknie (popup) po kliknięciu przycisku „Pokaż przepis”, co pozwala zachować czytelność strony głównej i wygodne przeglądanie.
-- 
+- Automatyczne dopasowanie przepisów do dostępnych składników  
+- Obsługa zamienników składników z częściowym uzupełnianiem ilości  
+- Obliczanie procentowego dopasowania przepisu  
+- Wskazywanie brakujących składników i ilości do dokupienia  
+- Intuicyjny interfejs z paginacją pól do wpisywania składników  
+- Wyświetlanie przepisów w modalnych oknach dla lepszej czytelności  
+
 ## Wstęp do przykładu zamienników i dopasowania składników
 
 Program nie tylko dokonuje prostych zamian składników, np. gdy potrzebujemy 100 ml mleka, a mamy 100 ml wody jako zamiennika, ale również potrafi częściowo dopasować dostępne ilości.  
