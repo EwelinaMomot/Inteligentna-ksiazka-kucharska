@@ -1,4 +1,4 @@
-# Inteligentna Książka Kucharska
+# Inteligentna Książka Kucharska 🍳
 
 Inteligentna książka kucharska dopasowuje przepisy do dostępnych w lodówce produktów, wykorzystując bazę Prologa, informacje o zamiennikach oraz szereg reguł.  
 Aplikacja sugeruje także, jakimi dodatkowymi składnikami uzupełnić zapasy, gdy brakują tylko jeden lub dwa produkty, umożliwiając przygotowanie wybranej potrawy.
@@ -8,6 +8,12 @@ System oblicza procent zgodności przepisu na podstawie dostępnych składników
 Pokazuje przepisy, które można przygotować w całości, a także te, do których brakuje jednego lub dwóch składników.
 Dla tych drugich wyświetla listę brakujących produktów wraz z wymaganymi ilościami, co pozwala użytkownikowi na łatwe uzupełnienie zapasów i większy wybór potraw do przygotowania.
 
+## Funkcjonalność interfejsu użytkownika
+Aplikacja uwzględnia wygodę użytkownika poprzez aspekty wizualne, takie jak:
+
+- Pokazywanie części pól do wpisania składników na stronie formularza i możliwość przewijania do kolejnych grup, gdy liczba składników jest duża.
+- Wyświetlanie szczegółowego opisu przepisu w modalnym oknie (popup) po kliknięciu przycisku „Pokaż przepis”, co pozwala zachować czytelność strony głównej i wygodne przeglądanie.
+- 
 ## Wstęp do przykładu zamienników i dopasowania składników
 
 Program nie tylko dokonuje prostych zamian składników, np. gdy potrzebujemy 100 ml mleka, a mamy 100 ml wody jako zamiennika, ale również potrafi częściowo dopasować dostępne ilości.  
@@ -58,7 +64,7 @@ Takie rozwiązanie umożliwia elastyczne wykorzystanie zamienników oraz dopasow
 
 ---
 
-## Używane technologie
+## Używane technologie 🛠
 
 - **Python (Flask)** — warstwa aplikacyjna  
 - **Prolog** — silnik wnioskujący o przepisach  
@@ -68,7 +74,7 @@ Takie rozwiązanie umożliwia elastyczne wykorzystanie zamienników oraz dopasow
 
 ---
 
-## Użyte paradygmaty programowania
+## Użyte paradygmaty programowania 💡
 
 - Paradygmat deklaratywny  
 - Paradygmat obiektowy  
@@ -99,7 +105,6 @@ inteligentna-ksiazka-kucharska/
 
 git clone https://github.com/twoj-uzytkownik/inteligentna-ksiazka-kucharska.git
 cd inteligentna-ksiazka-kucharska
-
 
 2. **Zainstaluj wymagane pakiety:**
 
