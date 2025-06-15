@@ -4,6 +4,9 @@ Inteligentna książka kucharska dopasowuje przepisy do dostępnych w lodówce p
 Aplikacja sugeruje także, jakimi dodatkowymi składnikami uzupełnić zapasy, gdy brakują tylko jeden lub dwa produkty, umożliwiając przygotowanie wybranej potrawy.
 
 ---
+System oblicza procent zgodności przepisu na podstawie dostępnych składników użytkownika.
+Pokazuje przepisy, które można przygotować w całości, a także te, do których brakuje jednego lub dwóch składników.
+Dla tych drugich wyświetla listę brakujących produktów wraz z wymaganymi ilościami, co pozwala użytkownikowi na łatwe uzupełnienie zapasów i większy wybór potraw do przygotowania.
 
 ## Wstęp do przykładu zamienników i dopasowania składników
 
@@ -100,7 +103,7 @@ cd inteligentna-ksiazka-kucharska
 
 2. **Zainstaluj wymagane pakiety:**
 
-pip install Flask pyswip
+pip install Flask pyswip ask
 
 3.**Uruchom aplikację:**
 
