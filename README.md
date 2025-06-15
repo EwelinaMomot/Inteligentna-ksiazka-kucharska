@@ -105,7 +105,7 @@ inteligentna-ksiazka-kucharska/
 
 1. **Sklonuj repozytorium:**
 
-git clone https://github.com/twoj-uzytkownik/inteligentna-ksiazka-kucharska.git
+git clone https://github.com/tEwelinaMomot/inteligentna-ksiazka-kucharska.git
 cd inteligentna-ksiazka-kucharska
 
 2. **Zainstaluj wymagane pakiety:**
