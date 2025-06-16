@@ -1,4 +1,4 @@
-% składnik(Nazwa, Jednostka).
+% sklad(Nazwa,Ilosc)
 
 % zamiennik(Oryginalny, Zastepczy).
 
@@ -16,6 +16,54 @@ przepis(nalesniki,
   "Wymieszaj skladniki na jednolite ciasto i odstaw na 10 minut. Rozgrzej patelnie na srednim ogniu i lekko ja natlust. Wlej cienka warstwe ciasta, smaz 1-2 minuty az brzegi sie zarumienia, przewroc i smaz kolejna minute. Powtarzaj do wykorzystania ciasta."
 ).
 
+przepis(tosty, 
+  [sklad(chleb, 2), sklad(szynka, 50), sklad(ser, 50)], 
+  1, 5,
+  "Połóż szynkę i ser na kromkach chleba. Opiekaj na patelni na średnim ogniu (ok. 160°C) lub w opiekaczu, aż ser się roztopi, a chleb zarumieni się na złoto. Podawaj od razu, opcjonalnie z keczupem lub warzywami."
+).
+
+przepis(salatka_grecka, 
+  [sklad(pomidor, 100), sklad(ogorek, 100), sklad(ser_feta, 50), sklad(oliwki, 20), sklad(olej, 10)], 
+  2, 10,
+  "Pokrój pomidory, ogórki i ser feta w większą kostkę. Dodaj oliwki. Skrop olejem i dopraw solą oraz pieprzem. Wymieszaj delikatnie. Podawaj na zimno, jako przystawkę lub lekką kolację."
+).
+
+
+przepis(placki_ziemniaczane, 
+  [sklad(ziemniaki, 500), sklad(cebula, 100), sklad(jajko, 50), sklad(maka, 50)], 
+  2, 15,
+  "Zetrzyj ziemniaki i cebulę na tarce o drobnych oczkach. Dodaj jajko, mąkę, dopraw solą. Smaż placuszki na patelni na rozgrzanym oleju (180°C) z obu stron, na złoty kolor (2-3 minuty z każdej strony). Podawaj na ciepło, opcjonalnie ze śmietaną."
+).
+
+przepis(szejk_truskawkowy, 
+  [sklad(truskawki, 100), sklad(mleko, 200), sklad(lody_waniliowe, 50)], 
+  1, 5,
+  "Zmiksuj wszystkie składniki na gładkie, puszyste smoothie. Podaj od razu, schłodzone, z rurką lub kawałkiem owocu na szklance."
+).
+
+przepis(kopytka, 
+  [sklad(ziemniaki, 500), sklad(maka, 100), sklad(jajko, 50)], 
+  4, 30,
+  "Ugotuj ziemniaki (100°C) do miękkości, przepuść je przez praskę, dodaj mąkę i jajko. Zagnieć gładkie ciasto, uformuj wałek, pokrój na kawałki i gotuj we wrzącej, osolonej wodzie (100°C) około 2-3 minuty od wypłynięcia. Podawaj od razu, na ciepło, np. z bułką tartą lub skwarkami."
+).
+
+przepis(placuszki_bananowe, 
+  [sklad(banan, 100), sklad(maka, 100), sklad(mleko, 100), sklad(jajko, 50)], 
+  2, 10,
+  "Zmiksuj wszystkie składniki na gładkie ciasto. Smaż placuszki na patelni na średnim ogniu (160°C) z obu stron, około 1-2 minuty, aż się zarumienią. Podawaj z syropem klonowym lub owocami."
+).
+
+przepis(kurczak_smazony, 
+  [sklad(kurczak, 500), sklad(sol, 5), sklad(pieprz, 5), sklad(olej, 100)], 
+  4, 30,
+  "Natrzyj kurczaka solą i pieprzem. Smaż na rozgrzanym oleju (160°C-180°C) na patelni, od czasu do czasu obracając, aż się zarumieni i upiecze. Podawaj od razu, z ulubionymi dodatkami, takimi jak ziemniaki lub surówka."
+).
+
+przepis(owsianka, 
+  [sklad(platki_owsiane, 100), sklad(mleko, 250), sklad(miod, 20)], 
+  1, 5,
+  "Zalej płatki owsiane mlekiem, gotuj kilka minut (90°C) od czasu do czasu mieszając, a na samym końcu dodaj miód. Podawaj na ciepło, z owocami lub orzechami."
+).
 
 przepis(kanapki_z_pasta_jajeczna, 
   [sklad(jajko, 100), sklad(majonez, 20), sklad(chleb, 2)], 
@@ -29,6 +77,122 @@ przepis(zupa_pomidorowa,
   "Pomidory sparz i pokroj, zagotuj z woda. Dopraw sola, pieprzem i ulubionymi ziolami. Gotuj na srednim ogniu okolo 20 minut. Dodaj makaron i gotuj do miekkosci, okolo 8 minut. Podawaj goraca."
 ).
 
+przepis(omlet_z_pomidorem,
+  [sklad(jajko, 150), sklad(pomidor, 100), sklad(olej, 10)],
+  1, 10,
+  "Rozgrzej olej na patelni. W misce roztrzep jajka, dodaj pokrojonego pomidora. Wlej masę na patelnię i smaż na srednim ogniu 5-7 minut az sie zetnie. Podawaj na ciepło."
+).
+
+przepis(ryz_na_mleku,
+  [sklad(ryz, 100), sklad(mleko, 300), sklad(cukier, 20)],
+  2, 25,
+  "W garnku zagotuj mleko, dodaj ryz i cukier. Gotuj na malym ogniu, mieszaj od czasu do czasu, az ryz bedzie miekki i kremowy (okolo 20 minut). Podawaj cieple."
+).
+
+przepis(zapiekanka_z_brokulami,
+  [sklad(brokuly, 300), sklad(ser, 100), sklad(jajko, 100)],
+  2, 30,
+  "Ugotuj brokuly do miekkosci. W misce wymieszaj jajka z tartym serem. Brokuly rozloz w naczyniu, zalej mieszanka jajeczna. Piecz w 180°C przez 20 minut az wierzch sie zarumieni. Podawaj na cieplo."
+).
+
+przepis(kaszka_ryzowa,
+  [sklad(ryz, 80), sklad(woda, 250), sklad(miod, 10)],
+  1, 20,
+  "Ryż ugotuj w wodzie do miekkosci. Dodaj miod i wymieszaj. Podawaj ciepłe, można dodac owoce."
+).
+
+przepis(salatka_z_jajkiem,
+  [sklad(jajko, 100), sklad(papryka, 100), sklad(ogorek, 100)],
+  2, 10,
+  "Ugotuj jajka na twardo, pokroj w kostke. Pokroj papryke i ogorka. Wszystko wymieszaj, dopraw sola i pieprzem. Podawaj schlodzone."
+).
+
+przepis(placuszki_jablkowe,
+  [sklad(jablko, 150), sklad(maka, 100), sklad(jajko, 50)],
+  2, 15,
+  "Zetrzyj jabłka na tarce. Dodaj mąkę i jajko, wymieszaj na ciasto. Smaż placuszki na rozgrzanej patelni po 2-3 minuty z każdej strony na złoty kolor. Podawaj ciepłe."
+).
+
+przepis(zapiekanka_z_brokulami,
+  [sklad(brokuly, 300), sklad(ser, 100), sklad(jajko, 50)],
+  2, 25,
+  "Ugotuj brokuly do miekosci. W misce wymieszaj jajko z tartym serem. Polacz z brokulami, przełóż do naczynia i zapiekaj w piekarniku 180°C przez 20 minut. Podawaj cieple."
+).
+
+przepis(kasza_z_pieczarkami,
+  [sklad(kasza, 200), sklad(pieczarki, 150), sklad(cebula, 50)],
+  2, 30,
+  "Ugotuj kasze. Podsmaz cebule z pieczarkami na oleju. Wymieszaj z kasza i dopraw sola oraz pieprzem. Podawaj na cieplo."
+).
+
+przepis(salatka_z_ryzem,
+  [sklad(ryz, 150), sklad(kukurydza, 100), sklad(papryka, 100)],
+  3, 15,
+  "Ugotuj ryz i ostudz. Dodaj odsaczona kukurydze i pokrojona papryke. Wymieszaj, dopraw sola, pieprzem i olejem. Podawaj schlodzone."
+).
+
+przepis(kotlety_jaglano-warzywne,
+  [sklad(jagla, 150), sklad(marchew, 100), sklad(jajko, 50)],
+  3, 35,
+  "Ugotuj jagle. Zetrzyj marchew, wymieszaj z jagla i jajkiem. Formuj kotlety i smaz na oleju do zlotego koloru z obu stron. Podawaj na cieplo."
+).
+
+przepis(omlet_z_pomidorami,
+  [sklad(jajko, 150), sklad(pomidor, 100), sklad(olej, 10)],
+  1, 10,
+  "W misce roztrzep jajka. Pokroj pomidora i dodaj do jajek. Usmaz na oleju na patelni na srednim ogniu, okolo 5 minut. Podawaj cieple."
+).
+
+przepis(zapiekanka_z_cukinia,
+  [sklad(cukinia, 300), sklad(ser, 100), sklad(jajko, 50)],
+  2, 30,
+  "Pokroj cukinie w plasterki. W misce wymieszaj jajko z tartym serem. Warstwowo uloz cukinie i polej mieszanka. Zapiekaj 25 minut w 180°C. Podawaj na cieplo."
+).
+
+przepis(krem_z_marchewki,
+  [sklad(marchew, 400), sklad(woda, 500), sklad(cebula, 50)],
+  4, 25,
+  "Podsmaz cebule, dodaj pokrojona marchew i wode. Gotuj do miekkosci, okolo 20 minut. Zblenduj, dopraw sola i pieprzem. Podawaj cieple."
+).
+
+przepis(pudding_ryzowy,
+  [sklad(ryz, 150), sklad(mleko, 400), sklad(cukier, 30)],
+  2, 40,
+  "Ugotuj ryz w mleku z cukrem na wolnym ogniu, az ryz bedzie miekkie i kremowe. Podawaj na cieplo lub zimno."
+).
+
+przepis(salatka_z_awokado,
+  [sklad(awokado, 100), sklad(pomidor, 100), sklad(ogorek, 100)],
+  2, 10,
+  "Pokroj awokado, pomidor i ogorek w kostke. Wymieszaj, dopraw sola, pieprzem i sokiem z cytryny. Podawaj schlodzone."
+).
+
+przepis(krem_z_buraka,
+  [sklad(burak, 400), sklad(woda, 500), sklad(cebula, 50)],
+  4, 30,
+  "Podsmaz cebule, dodaj obrane i pokrojone buraki oraz wode. Gotuj do miekkosci, okolo 25 minut. Zblenduj na krem, dopraw sola i pieprzem. Podawaj cieple."
+).
+
+
+przepis(koktajl_bananowy,
+  [sklad(banan, 120), sklad(mleko, 250)],
+  1, 5,
+  "Zmiksuj banana z mlekiem na gładki koktajl. Podawaj schłodzony."
+).
+
+przepis(grzanki_czosnkowe,
+  [sklad(chleb, 4), sklad(maslo, 20), sklad(czosnek, 3)],
+  2, 10,
+  "Czosnek przeciśnij przez praskę i wymieszaj z roztopionym masłem. Posmaruj kromki chleba i zapiekaj w piekarniku w 180°C przez 8 minut na złoty kolor."
+).
+
+przepis(smazony_ser,
+  [sklad(ser, 200), sklad(maka, 50), sklad(jajko, 50)],
+  2, 15,
+  "Pokroj ser w plastry. Obtocz w maki, potem w roztrzepanym jajku, ponownie w maki. Smaż na rozgrzanym oleju po 2-3 minuty z kazdej strony na zloto. Podawaj cieple."
+).
+
+
 przepis(spaghetti, 
   [sklad(makaron, 200), sklad(mieso_mielone, 300), sklad(pomidory, 200)], 
   3, 35,
@@ -36,7 +200,7 @@ przepis(spaghetti,
 ).
 
 przepis(salatka_cezar, 
-  [sklad(salata, 100), sklad(kurczak, 150), sklad(grzanki, 50)], 
+  [sklad(salata, 100), sklad(kurczak, 150), sklad(grzanki, 50),sklad(parmezan,10)], 
   2, 15,
   "Kurczaka dopraw i usmaz na zloty kolor, ostudz i pokroj w paski. Salate porwij na mniejsze kawalki, wymieszaj z dressingiem i grzankami. Dodaj kurczaka, wymieszaj i podawaj."
 ).
@@ -83,22 +247,10 @@ przepis(tosty_z_serem,
   "Chleb posmaruj maslem, poloz plaster sera i przykryj drugim kawalkiem chleba. Smaz na rozgrzanej patelni z obu stron na zolty kolor, okolo 3-4 minuty na strone. Podawaj na cieplo."
 ).
 
-przepis(placki_ziemniaczane, 
-  [sklad(ziemniaki, 300), sklad(jajko, 100), sklad(maka, 30)], 
-  3, 25,
-  "Zetrzyj ziemniaki na tarce, odcisnij nadmiar soku. Wymieszaj z jajkiem i maka, dopraw sola i pieprzem. Na rozgrzanej patelni smaz lyzka porcje ciasta na zolty kolor, okolo 3-4 minuty z kazdej strony. Podawaj gorace."
-).
-
 przepis(sushi, 
   [sklad(ryz, 250), sklad(nori, 2), sklad(ryba, 100)], 
   2, 45,
   "Ugotuj ryz do sushi zgodnie z instrukcja. Na nori rozloz cienka warstwe ryzu, dodaj pasek ryby i zroluj. Pokroj na kawalki. Podawaj z sosem sojowym, imbirem i wasabi."
-).
-
-przepis(placki_bananowe, 
-  [sklad(banan, 200), sklad(maka, 100), sklad(mleko, 100)], 
-  2, 15,
-  "Rozgniec banany na puree. Wymieszaj z maka i mlekiem na gladkie ciasto. Smaz na rozgrzanej patelni lyzka porcje ciasta okolo 2-3 minuty z kazdej strony. Podawaj z ulubionymi dodatkami."
 ).
 
 przepis(sos_czosnkowy, 
@@ -155,12 +307,6 @@ przepis(krem_czekoladowy,
   "Podgrzej smietane do wrzenia, zalej nia posiekana czekolade i mieszaj do rozpuszczenia. Dodaj cukier i chlodz w lodowce co najmniej 2 godziny przed podaniem."
 ).
 
-przepis(salata_grecka, 
-  [sklad(pomidor, 200), sklad(ogorek, 150), sklad(oliwki, 50), sklad(feta, 100)], 
-  3, 10,
-  "Pokroj warzywa i fete, wymieszaj z oliwkami. Skrop oliwa z oliwek i dopraw oregano. Podawaj swieza."
-).
-
 przepis(zupa_pieczarkowa, 
   [sklad(pieczarki, 300), sklad(cebula, 100), sklad(bulion, 1000)], 
   4, 30,
@@ -205,7 +351,7 @@ przepis(kurczak_pieczony,
 ).
 
 przepis(jaglanka, 
-  [sklad(jagly, 100), sklad(mleko, 200), sklad(miod, 20)], 
+  [sklad(platki_jaglane, 100), sklad(mleko, 200), sklad(miod, 20)], 
   2, 15,
   "Kasze jaglana oplucz i ugotuj w mleku na malym ogniu okolo 15 minut, az wchlonie plyn i zmieknie. Dodaj miod do smaku i wymieszaj."
 ).
@@ -258,13 +404,13 @@ przepis(frytki_domowe,
   "Ziemniaki obierz i pokroj w slupki. Wymocz w zimnej wodzie, osusz. Smaz na glebokim oleju rozgrzanym do 180°C przez okolo 7-8 minut na zloty kolor. Odsacz na papierze. Podawaj gorace."
 ).
 
-przepis(sos_pomidorowy, 
-  [sklad(pomidory, 400), sklad(czosnek, 2), sklad(cebula, 100)], 
+przepis(makaron_z_sosem_pomidorowym, 
+  [sklad(pomidory, 400), sklad(czosnek, 2), sklad(cebula, 100),sklad(makaron,400)], 
   4, 30,
   "Podsmaz cebule i czosnek, dodaj pomidory i dus na malym ogniu okolo 20 minut az sos zgestnieje. Dopraw sola, pieprzem i ziolami."
 ).
 
-przepis(kalafior_z_bulka, 
+przepis(kalafior_w_bulce_tartej, 
   [sklad(kalafior, 500), sklad(bulka_tarta, 100), sklad(maslo, 50)], 
   4, 40,
   "Kalafior ugotuj na poltwardo. Przygotuj bulke tarta z roztopionym maslem. Posyp kalafior mieszanka i zapiekaj w piekarniku 180°C przez 15 minut."
@@ -314,7 +460,6 @@ zamiennik(ser, ser_zolty).
 zamiennik(ser_zolty, mozzarella).
 zamiennik(szynka, salami).
 zamiennik(salami, szynka).
-zamiennik(jajko, siemie_lniane).
 zamiennik(sol, przyprawy).
 zamiennik(pieprz, chili).
 zamiennik(olej, oliwa).
@@ -325,4 +470,41 @@ zamiennik(wolowina, wieprzowina).
 zamiennik(wieprzowina, wolowina).
 zamiennik(ryba, tunczyk).
 zamiennik(tunczyk, losos).
+zamiennik(mieso_mielone,mieso).
+zamiennik(jajko, platki_sojowe).
+zamiennik(platki_sojowe, siemie_lniane).
+zamiennik(mleko, mleko_sojowe).
+zamiennik(ser, ser_feta).
+zamiennik(ser_feta, tofu).
+zamiennik(ryz, kuskus).
+zamiennik(kuskus, kasza_gryczana).
+zamiennik(olej, oliwa).
+zamiennik(groch, groszek).
+zamiennik(pomidor, pomidory_koktajlowe).
+zamiennik(cukinia, kabaczek).
+zamiennik(maslo, margaryna).
+zamiennik(ziemniak, kartofel).
+zamiennik(marchew, marchewka).
+zamiennik(baklazan, oberzyn).
+zamiennik(papryka_czerwona, papryka).
+zamiennik(cebula, cebula_czerwona).
+zamiennik(czosnek, czosnek_swiezy).
+zamiennik(platki_jaglane, jagly).
+zamiennik(jagly, kasza_jaglana).
+zamiennik(platki_owsiane, owsianka).
+zamiennik(ryz, ryz_bialy).
+zamiennik(ryz_brązowy, ryz_brazowy).
+zamiennik(makaron, spaghetti).
+zamiennik(jajko,jajo).
+zamiennik(jajko,jajka).
+zamiennik(jajko,jaja).
+zamiennik(ser, ser_zolty).
+zamiennik(ser, ser_bialy).
+zamiennik(ser_zolty,ser).
+zamiennik(ser_bialy,ser).
+zamiennik(bulion, bulion_warzywny).
+zamiennik(cukier, cukier_bialy).
+zamiennik(cukier, cukier_brazowy).
+
+
 
