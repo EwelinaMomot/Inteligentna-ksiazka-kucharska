@@ -105,7 +105,7 @@ inteligentna-ksiazka-kucharska/
 
 1. **Sklonuj repozytorium:**
 
-git clone https://github.com/tEwelinaMomot/inteligentna-ksiazka-kucharska.git
+git clone https://github.com/EwelinaMomot/inteligentna-ksiazka-kucharska.git
 cd inteligentna-ksiazka-kucharska
 
 Jeżeli podczas klonowania zostajesz poproszony o nazwę użytkownika i hasło, należy podać:
