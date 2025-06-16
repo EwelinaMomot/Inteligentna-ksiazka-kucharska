@@ -1,7 +1,7 @@
 # Inteligentna Książka Kucharska 🍳
 
 Inteligentna książka kucharska dopasowuje przepisy do dostępnych w lodówce produktów, wykorzystując bazę Prologa, informacje o zamiennikach oraz szereg reguł.  
-Pokazuje przepisy, które można przygotować w całości, a także te, do których brakuje jednego lub dwóch składników.
+Pokazuje przepisy, które można przygotować w całości, a także te, do których wystarczy dokupić jeden lub dwa składniki.
 Dla tych drugich wyświetla listę brakujących produktów wraz z wymaganymi ilościami, co pozwala użytkownikowi na łatwe uzupełnienie zapasów i większy wybór potraw do przygotowania.
 
 ---
