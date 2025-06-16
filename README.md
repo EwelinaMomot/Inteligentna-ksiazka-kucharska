@@ -108,6 +108,10 @@ inteligentna-ksiazka-kucharska/
 git clone https://github.com/tEwelinaMomot/inteligentna-ksiazka-kucharska.git
 cd inteligentna-ksiazka-kucharska
 
+Jeżeli podczas klonowania zostajesz poproszony o nazwę użytkownika i hasło, należy podać:
+- Nazwa użytkownika: Twój login GitHub
+- Hasło: Twój Personal Access Token (PAT) — należy wcześniej utworzyć takiego PAT na GitHub.
+
 2. **Zainstaluj wymagane pakiety:**
 
 pip install Flask pyswip ask
