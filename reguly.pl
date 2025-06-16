@@ -118,26 +118,42 @@ przepisy_z_brakami_1_lub_2(Porcje, Lista) :-
 % - wypisuje wszystkie posiadane lub zastępowalne składniki dla danego przepisu.
 
 dostepne_skladniki_szczegolowo(Przepis, PorcjeDocelowe, Lista) :-
-    przepis(Przepis, SkladnikiBazowe, PorcjeBazowe, _,_),
+    przepis(Przepis, SkladnikiBazowe, PorcjeBazowe, _, _),
     przelicz_skladniki(SkladnikiBazowe, PorcjeBazowe, PorcjeDocelowe, SkladnikiPrzeliczone),
     findall(
         Para,
         (
             member(sklad(Nazwa, Potrzebna), SkladnikiPrzeliczone),
-            mam(Nazwa, MamIlosc),
+
+            % Sprawdź ile masz oryginalnego składnika (0 jeśli brak)
+            (mam(Nazwa, MamIlosc) -> true ; MamIlosc = 0),
+            
+            % Sprawdź zamiennik (jeśli jest)
+            (zamiennik(Nazwa, Zamiennik), mam(Zamiennik, MamZamIlosc) -> true ; (Zamiennik = none, MamZamIlosc = 0)),
+
             IloscOryg is min(MamIlosc, Potrzebna),
             Reszta is Potrzebna - IloscOryg,
-            (
+
+            ( 
                 Reszta > 0,
-                zamiennik(Nazwa, Zamiennik),
-                mam(Zamiennik, MamZamIlosc),
+                Zamiennik \= none,
                 IloscZam is min(MamZamIlosc, Reszta),
-                ( IloscOryg > 0 -> Para1 = [Nazwa-IloscOryg] ; Para1 = [] ),
-                ( IloscZam > 0 -> Para2 = [Zamiennik-IloscZam] ; Para2 = [] ),
+                % Zwróć oryginał jeśli >0
+                (IloscOryg > 0 -> Para1 = [Nazwa-IloscOryg] ; Para1 = []),
+                % Zwróć zamiennik jeśli >0
+                (IloscZam > 0 -> Para2 = [Zamiennik-IloscZam] ; Para2 = []),
                 append(Para1, Para2, Para)
             ;
+                % Jeśli Reszta <=0 to zwróć tylko oryginał (jeśli >0)
                 Reszta =< 0,
-                ( IloscOryg > 0 -> Para = [Nazwa-IloscOryg] ; Para = [] )
+                (IloscOryg > 0 -> Para = [Nazwa-IloscOryg] ; Para = [])
+            ;
+
+                % Jeśli nie masz oryginału (0) ale masz zamiennik >= Potrzebna
+                MamIlosc = 0,
+                Zamiennik \= none,
+                MamZamIlosc >= Potrzebna,
+                Para = [Zamiennik-Potrzebna]
             )
         ),
         ListaList
