@@ -111,16 +111,24 @@ cd inteligentna-ksiazka-kucharska
 Jeżeli podczas klonowania zostajesz poproszony o nazwę użytkownika i hasło, należy podać:
 - Nazwa użytkownika: Twój login GitHub
 - Hasło: Twój Personal Access Token (PAT) — należy wcześniej utworzyć takiego PAT na GitHub.
+  
+2.**utwórz i aktywuj środowisko virtualne**
 
-2. **Zainstaluj wymagane pakiety:**
+- sudo apt install python3-venv
+ - cd inteligentna-ksiazka-kucharska
+ - python3 -m venv venv
+ - source venv/bin/activate
+
+3. **Zainstaluj wymagane pakiety:**
 
 pip install Flask pyswip ask
 
-3.**Uruchom aplikację:**
+4.**Uruchom aplikację:**
 
 python app.py
 
 4.**Otwórz przeglądarkę i przejdź pod adres:**
+
 http://127.0.0.1:5000
 
  
