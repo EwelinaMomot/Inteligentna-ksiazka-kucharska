@@ -123,6 +123,7 @@ def index():
             liczba_produktow = int(request.form.get('liczba_produktow', 0))
             for i in range(liczba_produktow):
                 nazwa = request.form.get(f'produkt_{i}', '').strip()
+                nazwa = nazwa.replace(" ", "_")
                 ilosc = int(request.form.get(f'ilosc_{i}', 0))
                 produkty.append((nazwa, ilosc))
             porcje = int(request.form.get('porcje', 0))
