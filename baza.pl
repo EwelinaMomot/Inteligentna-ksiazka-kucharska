@@ -4,7 +4,7 @@
 
 % przepis(Nazwa, [sklad(NazwaSkladnika, Ilosc)], naIleOsob, CzasMinuty,przepis).
 
-przepis(Jajecznica, 
+przepis(jajecznica, 
   [sklad(jajko, 150), sklad(cebula, 100), sklad(maslo, 10)], 
   2, 10,
   "Rozgrzej patelnie na srednim ogniu, dodaj maslo i poczekaj az sie roztopi. Dodaj drobno posiekana cebule i smaz az sie zeszkli, okolo 3-4 minuty. Wbij jajka, mieszaj delikatnie drewniana lyzka przez 4-5 minut, az masa bedzie kremowa. Podawaj od razu."
