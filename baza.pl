@@ -17,7 +17,7 @@ przepis(nalesniki,
 ).
 
 przepis(tosty, 
-  [sklad(chleb, 2), sklad(szynka, 50), sklad(ser, 50)], 
+  [sklad(chleb, 20), sklad(szynka, 50), sklad(ser, 50)], 
   1, 5,
   "Połóż szynkę i ser na kromkach chleba. Opiekaj na patelni na średnim ogniu (ok. 160°C) lub w opiekaczu, aż ser się roztopi, a chleb zarumieni się na złoto. Podawaj od razu, opcjonalnie z keczupem lub warzywami."
 ).
@@ -41,11 +41,6 @@ przepis(szejk_truskawkowy,
   "Zmiksuj wszystkie składniki na gładkie, puszyste smoothie. Podaj od razu, schłodzone, z rurką lub kawałkiem owocu na szklance."
 ).
 
-przepis(kopytka, 
-  [sklad(ziemniaki, 500), sklad(maka, 100), sklad(jajko, 50)], 
-  4, 30,
-  "Ugotuj ziemniaki (100°C) do miękkości, przepuść je przez praskę, dodaj mąkę i jajko. Zagnieć gładkie ciasto, uformuj wałek, pokrój na kawałki i gotuj we wrzącej, osolonej wodzie (100°C) około 2-3 minuty od wypłynięcia. Podawaj od razu, na ciepło, np. z bułką tartą lub skwarkami."
-).
 
 przepis(placuszki_bananowe, 
   [sklad(banan, 100), sklad(maka, 100), sklad(mleko, 100), sklad(jajko, 50)], 
