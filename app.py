@@ -147,8 +147,10 @@ def index():
 
                 przepisy_skladniki = {}
                 for nazwa, lista_str in original_przepisy_skladniki.items():
-                    przepisy_skladniki[nazwa] = [parse_skladnik_str(s) for s in lista_str]
-                print(przepisy_skladniki)
+                    skladniki_parsed = [parse_skladnik_str(s) for s in lista_str]
+                    skladniki_unikalne = list(set(skladniki_parsed))  
+                    przepisy_skladniki[nazwa] = skladniki_unikalne
+
                 
                 opisy_przepisu = pobierz_opisy_przepisow( przepisy_100)
                 org_przepisy_opisy_dict = dict(opisy_przepisu)
