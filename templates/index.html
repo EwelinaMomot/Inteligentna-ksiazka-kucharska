@@ -127,7 +127,7 @@
         <h2>Przepisy, do których wystarczy dokupić jeden lub dwa składniki:</h2>
         <ol>
             {% for nazwa, braki in brakujace_przepisy[:10] %}
-            <li class="przepis">{{ nazwa }} — potrzebujesz: {{ braki|join(" gram, ") }} gram</li>
+            <li class="przepis">{{ nazwa }} — potrzebujesz jeszcze : {{ braki|join(" gram, ") }} gram</li>
             {% endfor %}
         </ol>
     {% endif %}
