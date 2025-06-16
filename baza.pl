@@ -436,7 +436,6 @@ zamiennik(marchew, dynia).
 zamiennik(banan, truskawki).
 zamiennik(truskawki, jagody).
 zamiennik(jagody, rodzynki).
-zamiennik(maslo, maslo_orzechowe).
 zamiennik(mleczko_kokosowe, mleko).
 zamiennik(miod, sok_pomaranczowy).
 zamiennik(ciecierzyca, soczewica).
