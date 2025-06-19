@@ -470,8 +470,7 @@ przepis(makaron_z_sosem_pomidorowym,
 przepis(kalafior_w_bulce_tartej, 
   [sklad(kalafior, 500), sklad(bulka_tarta, 100), sklad(maslo, 50)], 
   4, 40,
-  "Kalafior ugotuj na poltwardo. Przygotuj bulke tarta z roztopionym maslem. Posyp kalafior mieszanka i zapiekaj w piekarniku 180 stopni przez 15 minut."
-).
+  "Kalafior ugotuj na poltwardo. Przygotuj bulke tarta z roztopionym maslem. Posyp kalafior mieszanka i zapiekaj w piekarniku 180 stopni przez 15 minut.").
 
 
 
@@ -550,7 +549,6 @@ zamiennik(platki_jaglane, jagly).
 zamiennik(jagly, kasza_jaglana).
 zamiennik(platki_owsiane, owsianka).
 zamiennik(ryz, ryz_bialy).
-zamiennik(ryz_brązowy, ryz_brazowy).
 zamiennik(makaron, spaghetti).
 zamiennik(jajko,jajo).
 zamiennik(jajko,jajka).
