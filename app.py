@@ -29,7 +29,8 @@ def pobierz_przepisy_100(prolog):
         try:
             procent, nazwa = ast.literal_eval(poprawiony)
             if procent == 100:
-                przepisy_100.append((procent, nazwa))
+                 nazwa_czysta = nazwa.replace("_", " ")
+                 przepisy_100.append((procent, nazwa_czysta))
         except Exception as e:
             pass
     return przepisy_100
@@ -48,7 +49,8 @@ def pobierz_opisy_przepisow(lista_przepisow):
     for item in lista_przepisow:
         
         nazwa = item[1]  # nazwa to pierwszy element
-        query = f"przepis({nazwa}, _, _, _, Opis)."
+        nazwa_prolog = nazwa.replace(" ", "_")
+        query = f"przepis({nazwa_prolog}, _, _, _, Opis)"
         result = list(prolog.query(query))
         
         if result:
