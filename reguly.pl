@@ -91,16 +91,27 @@ pierwsze_n(N, [H|T], [H|Wynik]) :-
 % uwzględniając zamienniki i dopełnienia zamiennikami (np. woda zastępująca mleko), tak by uniknąć fałszywych braków.
 
 brakujace_skladniki(Przepis, Porcje, Lista) :-
-    przepis(Przepis, Skladniki, PorcjeBazowe, _,_),
+    przepis(Przepis, Skladniki, PorcjeBazowe, _, _),
     przelicz_skladniki(Skladniki, PorcjeBazowe, Porcje, SkladnikiPrzeliczone),
     findall(
-        Nazwa-Ilosc,
+        Nazwa-BrakujacaIlosc,
         (
-            member(sklad(Nazwa, Ilosc), SkladnikiPrzeliczone),
-            \+ mam_lub_zamiennik(Nazwa, Ilosc)
+            member(sklad(Nazwa, PotrzebnaIlosc), SkladnikiPrzeliczone),
+            
+            % Ile mamy oryginału
+            (mam(Nazwa, MamOryg) -> true ; MamOryg = 0),
+
+            % Czy mamy zamiennik
+            (zamiennik(Nazwa, Zamiennik), mam(Zamiennik, MamZam) -> true ; (MamZam = 0)),
+
+            Dostepne is MamOryg + MamZam,
+            Brak is PotrzebnaIlosc - Dostepne,
+            Brak > 0,
+            BrakujacaIlosc is Brak
         ),
         Lista
     ).
+
 
 
 % - znajduje przepisy, które mają tylko 1 lub 2 braki — te mogą się opłacić uzupełnić.
