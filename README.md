@@ -11,7 +11,8 @@ Dla tych drugich wyświetla listę brakujących produktów wraz z potrzebnymi il
 - Automatyczne dopasowanie przepisów do dostępnych składników  
 - Obsługa zamienników składników z częściowym uzupełnianiem ilości  
 - Obliczanie procentowego dopasowania przepisu  
-- Wskazywanie brakujących składników i ilości do dokupienia,
+- Wskazywanie brakujących składników i ilości do dokupienia
+- inteligentne dopasowanie składników użytkownika do wymaganych w przepisie na podstawie podobieństwa nazw z użyciem progu podobieństwa znaków
 - Intuicyjny interfejs z paginacją pól do wpisywania składników  
 - Wyświetlanie przepisów w modalnych oknach dla lepszej czytelności  
 
