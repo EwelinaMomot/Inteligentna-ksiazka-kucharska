@@ -19,45 +19,43 @@ przepis(nalesniki,
 przepis(tosty, 
   [sklad(chleb, 20), sklad(szynka, 50), sklad(ser, 50)], 
   1, 5,
-  "Połóż szynkę i ser na kromkach chleba. Opiekaj na patelni na średnim ogniu (ok. 160°C) lub w opiekaczu, aż ser się roztopi, a chleb zarumieni się na złoto. Podawaj od razu, opcjonalnie z keczupem lub warzywami."
+  "Poloz szynke i ser na kromkach chleba. Opiekaj na patelni na srednim ogniu (ok. 160°C) lub w opiekaczu, az ser sie roztopi, a chleb zarumieni sie na zloto. Podawaj od razu, opcjonalnie z keczupem lub warzywami."
 ).
 
 przepis(salatka_grecka, 
   [sklad(pomidor, 100), sklad(ogorek, 100), sklad(ser_feta, 50), sklad(oliwki, 20), sklad(olej, 10)], 
   2, 10,
-  "Pokrój pomidory, ogórki i ser feta w większą kostkę. Dodaj oliwki. Skrop olejem i dopraw solą oraz pieprzem. Wymieszaj delikatnie. Podawaj na zimno, jako przystawkę lub lekką kolację."
+  "Pokroj pomidory, ogorki i ser feta w wieksza kostke. Dodaj oliwki. Skrop olejem i dopraw sola oraz pieprzem. Wymieszaj delikatnie. Podawaj na zimno, jako przystawke lub lekka kolacje."
 ).
-
 
 przepis(placki_ziemniaczane, 
   [sklad(ziemniaki, 500), sklad(cebula, 100), sklad(jajko, 50), sklad(maka, 50)], 
   2, 15,
-  "Zetrzyj ziemniaki i cebulę na tarce o drobnych oczkach. Dodaj jajko, mąkę, dopraw solą. Smaż placuszki na patelni na rozgrzanym oleju (180°C) z obu stron, na złoty kolor (2-3 minuty z każdej strony). Podawaj na ciepło, opcjonalnie ze śmietaną."
+  "Zetrzyj ziemniaki i cebule na tarce o drobnych oczkach. Dodaj jajko, make, dopraw sola. Smaz placuszki na patelni na rozgrzanym oleju (180°C) z obu stron, na zloty kolor (2-3 minuty z kazdej strony). Podawaj na cieplo, opcjonalnie ze smietana."
 ).
 
 przepis(szejk_truskawkowy, 
   [sklad(truskawki, 100), sklad(mleko, 200), sklad(lody_waniliowe, 50)], 
   1, 5,
-  "Zmiksuj wszystkie składniki na gładkie, puszyste smoothie. Podaj od razu, schłodzone, z rurką lub kawałkiem owocu na szklance."
+  "Zmiksuj wszystkie skladniki na gladkie, puszyste smoothie. Podaj od razu, schlodzone, z rurka lub kawalkiem owocu na szklance."
 ).
-
 
 przepis(placuszki_bananowe, 
   [sklad(banan, 100), sklad(maka, 100), sklad(mleko, 100), sklad(jajko, 50)], 
   2, 10,
-  "Zmiksuj wszystkie składniki na gładkie ciasto. Smaż placuszki na patelni na średnim ogniu (160°C) z obu stron, około 1-2 minuty, aż się zarumienią. Podawaj z syropem klonowym lub owocami."
+  "Zmiksuj wszystkie skladniki na gladkie ciasto. Smaz placuszki na patelni na srednim ogniu (160°C) z obu stron, okolo 1-2 minuty, az sie zarumienia. Podawaj z syropem klonowym lub owocami."
 ).
 
 przepis(kurczak_smazony, 
   [sklad(kurczak, 500), sklad(sol, 5), sklad(pieprz, 5), sklad(olej, 100)], 
   4, 30,
-  "Natrzyj kurczaka solą i pieprzem. Smaż na rozgrzanym oleju (160°C-180°C) na patelni, od czasu do czasu obracając, aż się zarumieni i upiecze. Podawaj od razu, z ulubionymi dodatkami, takimi jak ziemniaki lub surówka."
+  "Natrzyj kurczaka sola i pieprzem. Smaz na rozgrzanym oleju (160°C-180°C) na patelni, od czasu do czasu obracajac, az sie zarumieni i upiecze. Podawaj od razu, z ulubionymi dodatkami, takimi jak ziemniaki lub surowka."
 ).
 
 przepis(owsianka, 
   [sklad(platki_owsiane, 100), sklad(mleko, 250), sklad(miod, 20)], 
   1, 5,
-  "Zalej płatki owsiane mlekiem, gotuj kilka minut (90°C) od czasu do czasu mieszając, a na samym końcu dodaj miód. Podawaj na ciepło, z owocami lub orzechami."
+  "Zalej platki owsiane mlekiem, gotuj kilka minut (90°C) od czasu do czasu mieszajac, a na samym koncu dodaj miod. Podawaj na cieplo, z owocami lub orzechami."
 ).
 
 przepis(kanapki_z_pasta_jajeczna, 
@@ -75,8 +73,9 @@ przepis(zupa_pomidorowa,
 przepis(omlet_z_pomidorem,
   [sklad(jajko, 150), sklad(pomidor, 100), sklad(olej, 10)],
   1, 10,
-  "Rozgrzej olej na patelni. W misce roztrzep jajka, dodaj pokrojonego pomidora. Wlej masę na patelnię i smaż na srednim ogniu 5-7 minut az sie zetnie. Podawaj na ciepło."
+  "Rozgrzej olej na patelni. W misce roztrzep jajka, dodaj pokrojonego pomidora. Wlej mase na patelnie i smaz na srednim ogniu 5-7 minut az sie zetnie. Podawaj na cieplo."
 ).
+
 
 przepis(ryz_na_mleku,
   [sklad(ryz, 100), sklad(mleko, 300), sklad(cukier, 20)],
@@ -93,8 +92,9 @@ przepis(zapiekanka_z_brokulami,
 przepis(kaszka_ryzowa,
   [sklad(ryz, 80), sklad(woda, 250), sklad(miod, 10)],
   1, 20,
-  "Ryż ugotuj w wodzie do miekkosci. Dodaj miod i wymieszaj. Podawaj ciepłe, można dodac owoce."
+  "Ryz ugotuj w wodzie do miekkosci. Dodaj miod i wymieszaj. Podawaj cieple, mozna dodac owoce."
 ).
+
 
 przepis(salatka_z_jajkiem,
   [sklad(jajko, 100), sklad(papryka, 100), sklad(ogorek, 100)],
@@ -105,8 +105,9 @@ przepis(salatka_z_jajkiem,
 przepis(placuszki_jablkowe,
   [sklad(jablko, 150), sklad(maka, 100), sklad(jajko, 50)],
   2, 15,
-  "Zetrzyj jabłka na tarce. Dodaj mąkę i jajko, wymieszaj na ciasto. Smaż placuszki na rozgrzanej patelni po 2-3 minuty z każdej strony na złoty kolor. Podawaj ciepłe."
+  "Zetrzyj jablka na tarce. Dodaj make i jajko, wymieszaj na ciasto. Smaz placuszki na rozgrzanej patelni po 2-3 minuty z kazdej strony na zloty kolor. Podawaj cieple."
 ).
+
 
 przepis(zapiekanka_z_brokulami,
   [sklad(brokuly, 300), sklad(ser, 100), sklad(jajko, 50)],
@@ -248,12 +249,6 @@ przepis(sushi,
   "Ugotuj ryz do sushi zgodnie z instrukcja. Na nori rozloz cienka warstwe ryzu, dodaj pasek ryby i zroluj. Pokroj na kawalki. Podawaj z sosem sojowym, imbirem i wasabi."
 ).
 
-przepis(sos_czosnkowy, 
-  [sklad(majonez, 100), sklad(czosnek, 2)], 
-  1, 5,
-  "Czosnek przeciśnij przez praske i wymieszaj z majonezem. Dopraw sola i pieprzem do smaku. Podawaj jako dip lub sos do mies."
-).
-
 przepis(salatka_tunczykowa, 
   [sklad(tunczyk, 150), sklad(kukurydza, 100), sklad(ogorek, 100)], 
   2, 10,
@@ -354,8 +349,9 @@ przepis(jaglanka,
 przepis(tarta_owocowa, 
   [sklad(maka, 250), sklad(maslo, 150), sklad(owoce, 300)], 
   6, 45,
-  "Zagnieć ciasto i wyloz nim forme. Piecz spod w 180°C przez 15 minut. Na podpieczony spod wyloz owoce i piecz kolejne 25-30 minut az ciasto sie zarumieni."
+  "Zagniec ciasto i wyloz nim forme. Piecz spod w 180°C przez 15 minut. Na podpieczony spod wyloz owoce i piecz kolejne 25-30 minut az ciasto sie zarumieni."
 ).
+
 
 przepis(risotto_z_pieczarkami, 
   [sklad(ryz, 200), sklad(pieczarki, 150), sklad(bulion, 500)], 
@@ -390,7 +386,7 @@ przepis(zupa_krem_brokulowa,
 przepis(tarta_szpinakowa, 
   [sklad(maka, 250), sklad(maslo, 150), sklad(szpinak, 200)], 
   4, 50,
-  "Zagnieć ciasto i wyloz nim forme. Podsmaz szpinak i wymieszaj z jajkami oraz serem. Wylej farsz na spod i piecz w 180°C przez 35-40 minut az masa sie zetnie."
+  "Zagniec ciasto i wyloz nim forme. Podsmaz szpinak i wymieszaj z jajkami oraz serem. Wylej farsz na spod i piecz w 180°C przez 35-40 minut az masa sie zetnie."
 ).
 
 przepis(frytki_domowe, 
