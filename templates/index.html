@@ -78,7 +78,8 @@
     <li class="przepis">
         <strong>{{ nazwa }}</strong> 
        <ul>
-        {% for skladnik, ilosc in przepisy_skladniki[nazwa] %}
+        {% set klucz = nazwa.replace(' ', '_') %}
+        {% for skladnik, ilosc in przepisy_skladniki[klucz] %}
             <li>{{ skladnik }} - {{ ilosc|round(0) }} gram</li>
         {% endfor %}
         </ul>
