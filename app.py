@@ -107,7 +107,7 @@ def index():
                 for entry_str in wynik[0]['Lista']:
                     cleaned_str = entry_str.lstrip(", ").rstrip()
                     nazwa, reszta = cleaned_str.split(", [", 1)
-                    nazwa = nazwa.strip("() ")
+                    nazwa = nazwa.strip("() ").replace("_", " ") 
                     reszta = reszta.rstrip("])")
                     braki_raw = reszta.split("', '")
                     braki = [b.strip("'").strip("-(").rstrip(")") for b in braki_raw]
