@@ -79,7 +79,8 @@ Takie rozwiązanie umożliwia elastyczne wykorzystanie zamienników oraz dopasow
 
 - Paradygmat deklaratywny  
 - Paradygmat obiektowy  
-- Paradygmat imperatywny  
+- Paradygmat imperatywny
+- Paradygmat proceduralny
 - Paradygmat zdarzeniowy  
 - Paradygmat logiczny  
 
