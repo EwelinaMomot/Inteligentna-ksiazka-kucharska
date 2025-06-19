@@ -19,7 +19,7 @@ przepis(nalesniki,
 przepis(tosty, 
   [sklad(chleb, 20), sklad(szynka, 50), sklad(ser, 50)], 
   1, 5,
-  "Poloz szynke i ser na kromkach chleba. Opiekaj na patelni na srednim ogniu (ok. 160°C) lub w opiekaczu, az ser sie roztopi, a chleb zarumieni sie na zloto. Podawaj od razu, opcjonalnie z keczupem lub warzywami."
+  "Poloz szynke i ser na kromkach chleba. Opiekaj na patelni na srednim ogniu (ok. 160 stopni) lub w opiekaczu, az ser sie roztopi, a chleb zarumieni sie na zloto. Podawaj od razu, opcjonalnie z keczupem lub warzywami."
 ).
 
 przepis(salatka_grecka, 
@@ -31,11 +31,11 @@ przepis(salatka_grecka,
 przepis(placki_ziemniaczane, 
   [sklad(ziemniaki, 500), sklad(cebula, 100), sklad(jajko, 50), sklad(maka, 50)], 
   2, 15,
-  "Zetrzyj ziemniaki i cebule na tarce o drobnych oczkach. Dodaj jajko, make, dopraw sola. Smaz placuszki na patelni na rozgrzanym oleju (180°C) z obu stron, na zloty kolor (2-3 minuty z kazdej strony). Podawaj na cieplo, opcjonalnie ze smietana."
+  "Zetrzyj ziemniaki i cebule na tarce o drobnych oczkach. Dodaj jajko, make, dopraw sola. Smaz placuszki na patelni na rozgrzanym oleju (180 stopni) z obu stron, na zloty kolor (2-3 minuty z kazdej strony). Podawaj na cieplo, opcjonalnie ze smietana."
 ).
 
 przepis(szejk_truskawkowy, 
-  [sklad(truskawki, 100), sklad(mleko, 200), sklad(lody_waniliowe, 50)], 
+  [sklad(truskawki, 100), sklad(mleko, 200), sklad(lody, 50)], 
   1, 5,
   "Zmiksuj wszystkie skladniki na gladkie, puszyste smoothie. Podaj od razu, schlodzone, z rurka lub kawalkiem owocu na szklance."
 ).
@@ -43,19 +43,19 @@ przepis(szejk_truskawkowy,
 przepis(placuszki_bananowe, 
   [sklad(banan, 100), sklad(maka, 100), sklad(mleko, 100), sklad(jajko, 50)], 
   2, 10,
-  "Zmiksuj wszystkie skladniki na gladkie ciasto. Smaz placuszki na patelni na srednim ogniu (160°C) z obu stron, okolo 1-2 minuty, az sie zarumienia. Podawaj z syropem klonowym lub owocami."
+  "Zmiksuj wszystkie skladniki na gladkie ciasto. Smaz placuszki na patelni na srednim ogniu (160 stopni) z obu stron, okolo 1-2 minuty, az sie zarumienia. Podawaj z syropem klonowym lub owocami."
 ).
 
 przepis(kurczak_smazony, 
   [sklad(kurczak, 500), sklad(sol, 5), sklad(pieprz, 5), sklad(olej, 100)], 
   4, 30,
-  "Natrzyj kurczaka sola i pieprzem. Smaz na rozgrzanym oleju (160°C-180°C) na patelni, od czasu do czasu obracajac, az sie zarumieni i upiecze. Podawaj od razu, z ulubionymi dodatkami, takimi jak ziemniaki lub surowka."
+  "Natrzyj kurczaka sola i pieprzem. Smaz na rozgrzanym oleju (160-180 stopni) na patelni, od czasu do czasu obracajac, az sie zarumieni i upiecze. Podawaj od razu, z ulubionymi dodatkami, takimi jak ziemniaki lub surowka."
 ).
 
 przepis(owsianka, 
   [sklad(platki_owsiane, 100), sklad(mleko, 250), sklad(miod, 20)], 
   1, 5,
-  "Zalej platki owsiane mlekiem, gotuj kilka minut (90°C) od czasu do czasu mieszajac, a na samym koncu dodaj miod. Podawaj na cieplo, z owocami lub orzechami."
+  "Zalej platki owsiane mlekiem, gotuj kilka minut (90 stopni) od czasu do czasu mieszajac, a na samym koncu dodaj miod. Podawaj na cieplo, z owocami lub orzechami."
 ).
 
 przepis(kanapki_z_pasta_jajeczna, 
@@ -86,7 +86,7 @@ przepis(ryz_na_mleku,
 przepis(zapiekanka_z_brokulami,
   [sklad(brokuly, 300), sklad(ser, 100), sklad(jajko, 100)],
   2, 30,
-  "Ugotuj brokuly do miekkosci. W misce wymieszaj jajka z tartym serem. Brokuly rozloz w naczyniu, zalej mieszanka jajeczna. Piecz w 180°C przez 20 minut az wierzch sie zarumieni. Podawaj na cieplo."
+  "Ugotuj brokuly do miekkosci. W misce wymieszaj jajka z tartym serem. Brokuly rozloz w naczyniu, zalej mieszanka jajeczna. Piecz w 180 stopni przez 20 minut az wierzch sie zarumieni. Podawaj na cieplo."
 ).
 
 przepis(kaszka_ryzowa,
@@ -94,7 +94,6 @@ przepis(kaszka_ryzowa,
   1, 20,
   "Ryz ugotuj w wodzie do miekkosci. Dodaj miod i wymieszaj. Podawaj cieple, mozna dodac owoce."
 ).
-
 
 przepis(salatka_z_jajkiem,
   [sklad(jajko, 100), sklad(papryka, 100), sklad(ogorek, 100)],
@@ -108,11 +107,10 @@ przepis(placuszki_jablkowe,
   "Zetrzyj jablka na tarce. Dodaj make i jajko, wymieszaj na ciasto. Smaz placuszki na rozgrzanej patelni po 2-3 minuty z kazdej strony na zloty kolor. Podawaj cieple."
 ).
 
-
 przepis(zapiekanka_z_brokulami,
   [sklad(brokuly, 300), sklad(ser, 100), sklad(jajko, 50)],
   2, 25,
-  "Ugotuj brokuly do miekosci. W misce wymieszaj jajko z tartym serem. Polacz z brokulami, przełóż do naczynia i zapiekaj w piekarniku 180°C przez 20 minut. Podawaj cieple."
+  "Ugotuj brokuly do miekosci. W misce wymieszaj jajko z tartym serem. Polacz z brokulami, przeloz do naczynia i zapiekaj w piekarniku 180 stopni przez 20 minut. Podawaj cieple."
 ).
 
 przepis(kasza_z_pieczarkami,
@@ -142,7 +140,7 @@ przepis(omlet_z_pomidorami,
 przepis(zapiekanka_z_cukinia,
   [sklad(cukinia, 300), sklad(ser, 100), sklad(jajko, 50)],
   2, 30,
-  "Pokroj cukinie w plasterki. W misce wymieszaj jajko z tartym serem. Warstwowo uloz cukinie i polej mieszanka. Zapiekaj 25 minut w 180°C. Podawaj na cieplo."
+  "Pokroj cukinie w plasterki. W misce wymieszaj jajko z tartym serem. Warstwowo uloz cukinie i polej mieszanka. Zapiekaj 25 minut w 180 stopni. Podawaj na cieplo."
 ).
 
 przepis(krem_z_marchewki,
@@ -169,46 +167,44 @@ przepis(krem_z_buraka,
   "Podsmaz cebule, dodaj obrane i pokrojone buraki oraz wode. Gotuj do miekkosci, okolo 25 minut. Zblenduj na krem, dopraw sola i pieprzem. Podawaj cieple."
 ).
 
-
 przepis(koktajl_bananowy,
   [sklad(banan, 120), sklad(mleko, 250)],
   1, 5,
-  "Zmiksuj banana z mlekiem na gładki koktajl. Podawaj schłodzony."
+  "Zmiksuj banana z mlekiem na gladki koktajl. Podawaj schlodzony."
 ).
 
 przepis(grzanki_czosnkowe,
   [sklad(chleb, 4), sklad(maslo, 20), sklad(czosnek, 3)],
   2, 10,
-  "Czosnek przeciśnij przez praskę i wymieszaj z roztopionym masłem. Posmaruj kromki chleba i zapiekaj w piekarniku w 180°C przez 8 minut na złoty kolor."
+  "Czosnek przecisnij przez praske i wymieszaj z roztopionym maslem. Posmaruj kromki chleba i zapiekaj w piekarniku w 180 stopni przez 8 minut na zloty kolor."
 ).
 
 przepis(smazony_ser,
   [sklad(ser, 200), sklad(maka, 50), sklad(jajko, 50)],
   2, 15,
-  "Pokroj ser w plastry. Obtocz w maki, potem w roztrzepanym jajku, ponownie w maki. Smaż na rozgrzanym oleju po 2-3 minuty z kazdej strony na zloto. Podawaj cieple."
+  "Pokroj ser w plastry. Obtocz w maki, potem w roztrzepanym jajku, ponownie w maki. Smaz na rozgrzanym oleju po 2-3 minuty z kazdej strony na zloto. Podawaj cieple."
 ).
 
-
-przepis(spaghetti, 
-  [sklad(makaron, 200), sklad(mieso_mielone, 300), sklad(pomidory, 200)], 
+przepis(spaghetti,
+  [sklad(makaron, 200), sklad(mieso_mielone, 300), sklad(pomidory, 200)],
   3, 35,
   "Ugotuj makaron al dente. Na patelni podsmaz mieso az sie zarumieni, dodaj pomidory i gotuj na malym ogniu az sos zgestnieje, okolo 15 minut. Wymieszaj makaron z sosem i podawaj od razu."
 ).
 
-przepis(salatka_cezar, 
-  [sklad(salata, 100), sklad(kurczak, 150), sklad(grzanki, 50),sklad(parmezan,10)], 
+przepis(salatka_cezar,
+  [sklad(salata, 100), sklad(kurczak, 150), sklad(grzanki, 50), sklad(parmezan, 10)],
   2, 15,
   "Kurczaka dopraw i usmaz na zloty kolor, ostudz i pokroj w paski. Salate porwij na mniejsze kawalki, wymieszaj z dressingiem i grzankami. Dodaj kurczaka, wymieszaj i podawaj."
 ).
 
-przepis(krem_z_dynii, 
-  [sklad(dynia, 500), sklad(woda, 500), sklad(cebula, 100)], 
+przepis(krem_z_dynii,
+  [sklad(dynia, 500), sklad(woda, 500), sklad(cebula, 100)],
   4, 25,
   "Podsmaz cebule az bedzie szklista, dodaj pokrojona dynie i wode. Gotuj do miekkosci dyni, okolo 20 minut. Zblenduj na krem, dopraw sola i pieprzem. Podawaj cieple."
 ).
 
-przepis(weganski_burger, 
-  [sklad(ciecierzyca, 200), sklad(bulka, 2), sklad(pomidor, 1)], 
+przepis(weganski_burger,
+  [sklad(ciecierzyca, 200), sklad(bulka, 2), sklad(pomidor, 1)],
   2, 30,
   "Ciecierzyce zmiksuj na gladka mase, dopraw przyprawami. Uformuj kotlety i smaz na rozgrzanej patelni okolo 5 minut z kazdej strony. Podawaj w bulce z plastrami pomidora i ulubionymi dodatkami."
 ).
@@ -234,7 +230,7 @@ przepis(omlet,
 przepis(kapusta_z_grochem, 
   [sklad(kapusta, 300), sklad(groch, 200), sklad(cebula, 100)], 
   5, 60,
-  "Groch namocz na noc, ugotuj do miekosci. Kapuste drobno posiekaj i gotuj razem z cebula na malym ogniu okolo 45 minut. Polacz groch z kapusta, dopraw do smaku i dus jeszcze przez 10 minut. Podawaj gorace."
+  "Groch namocz na noc, ugotuj do miekkosci. Kapuste drobno posiekaj i gotuj razem z cebula na malym ogniu okolo 45 minut. Polacz groch z kapusta, dopraw do smaku i dus jeszcze przez 10 minut. Podawaj gorace."
 ).
 
 przepis(tosty_z_serem, 
@@ -258,19 +254,19 @@ przepis(salatka_tunczykowa,
 przepis(kopytka, 
   [sklad(ziemniaki, 500), sklad(maka, 100), sklad(jajko, 100)], 
   4, 30,
-  "Ugotowane ziemniaki przecisnij przez praske, wymieszaj z maka i jajkiem na gladkie ciasto. Formuj waleczki i kroj na kawalki. Gotuj w osolonej wodzie az wyplyna, okolo 3-5 minut. Podawaj z maslem lub sosem."
+  "Ugotowane ziemniaki przcisnij przez praskę, wymieszaj z maka i jajkiem na gladkie ciasto. Formuj waleczki i kroj na kawalki. Gotuj w osolonej wodzie az wyplyna, okolo 3-5 minut. Podawaj z maslem lub sosem."
 ).
 
 przepis(sernik_new_york, 
-  [sklad(serek, 500), sklad(ciastka, 200), sklad(smietana, 100)], 
+  [sklad(serk, 500), sklad(ciastka, 200), sklad(smietana, 100)], 
   6, 60,
-  "Zmiksuj serek ze smietana do gladkiej masy. Pokrusz ciastka i wymieszaj z roztopionym maslem, wylóż nimi spod tortownicy. Wylej mase serowa na spod i piecz w piekarniku nagrzanym do 160°C przez 50-60 minut az masa sie zetnie, ale srodek bedzie lekko miekki. Po upieczeniu ostudz i schlodz w lodowce minimum 4 godziny."
+  "Zmiksuj serk ze smietana do gladkiej masy. Pokrusz ciastka i wymieszaj z roztopionym maslem, wyloz nimi spod tortownicy. Wylej mase serowa na spod i piecz w piekarniku nagrzanym do 160 stopni przez 50-60 minut, az masa sie zetnie, ale srodek bedzie lekko miekki. Po upieczeniu ostudz i schlodz w lodowce minimum 4 godziny."
 ).
 
 przepis(chleb_domowy, 
   [sklad(maka, 500), sklad(woda, 250), sklad(drozdze, 20)], 
   1, 90,
-  "W cieplej wodzie rozpusc drozdze z cukrem i odstaw na 10 minut do spienienia. Wymieszaj make z sola, dodaj aktywne drozdze i wyrob elastyczne ciasto. Przykryj i odstaw do wyrosniecia na okolo 60 minut. Przeloz ciasto do formy, piecz w piekarniku nagrzanym do 220°C przez 15 minut, potem zmniejsz temperature do 190°C i piecz kolejne 40 minut. Po upieczeniu wystudz na kratce."
+  "W cieplej wodzie rozpusc drozdze z cukrem i odstaw na 10 minut do spienienia. Wymieszaj make z sola, dodaj aktywne drozdze i wyrob elastyczne ciasto. Przykryj i odstaw do wyrosniecia na okolo 60 minut. Przeloz ciasto do formy, piecz w piekarniku nagrzanym do 220 stopni przez 15 minut, potem zmniejsz temperature do 190 stopni i piecz kolejne 40 minut. Po upieczeniu wystudz na kratce."
 ).
 
 przepis(kotlety_mielone, 
@@ -279,10 +275,82 @@ przepis(kotlety_mielone,
   "Mieso wymieszaj z bulka namoczona w mleku, jajkiem i przyprawami. Formuj kotlety, obtocz w bulce tartej i smaz na rozgrzanej patelni na zolty kolor, okolo 6-7 minut z kazdej strony. Podawaj gorace."
 ).
 
+przepis(jajecznica, 
+  [sklad(jajko, 150), sklad(cebula, 100), sklad(maslo, 10)], 
+  2, 10,
+  "Rozgrzej patelnie na srednim ogniu, dodaj maslo i poczekaj az sie roztopi. Dodaj drobno posiekana cebule i smaz az sie zeszkli, okolo 3-4 minuty. Wbij jajka, mieszaj delikatnie drewniana lyzka przez 4-5 minut, az masa bedzie kremowa. Podawaj od razu."
+).
+
+przepis(nalesniki, 
+  [sklad(maka, 200), sklad(jajko, 100), sklad(mleko, 300)], 
+  4, 20,
+  "Wymieszaj skladniki na jednolite ciasto i odstaw na 10 minut. Rozgrzej patelnie na srednim ogniu i lekko ja natlust. Wlej cienka warstwe ciasta, smaz 1-2 minuty az brzegi sie zarumienia, przewroc i smaz kolejna minute. Powtarzaj do wykorzystania ciasta."
+).
+
+przepis(tosty, 
+  [sklad(chleb, 20), sklad(szynka, 50), sklad(ser, 50)], 
+  1, 5,
+  "Poloz szynke i ser na kromkach chleba. Opiekaj na patelni na srednim ogniu (ok. 160 stopni) lub w opiekaczu, az ser sie roztopi, a chleb zarumieni sie na zloto. Podawaj od razu, opcjonalnie z keczupem lub warzywami."
+).
+
+przepis(salatka_grecka, 
+  [sklad(pomidor, 100), sklad(ogorek, 100), sklad(ser_feta, 50), sklad(oliwki, 20), sklad(olej, 10)], 
+  2, 10,
+  "Pokroj pomidory, ogorki i ser feta w wieksza kostke. Dodaj oliwki. Skrop olejem i dopraw sola oraz pieprzem. Wymieszaj delikatnie. Podawaj na zimno, jako przystawke lub lekka kolacje."
+).
+
+przepis(placki_ziemniaczane, 
+  [sklad(ziemniaki, 500), sklad(cebula, 100), sklad(jajko, 50), sklad(maka, 50)], 
+  2, 15,
+  "Zetrzyj ziemniaki i cebule na tarce o drobnych oczkach. Dodaj jajko, make, dopraw sola. Smaz placuszki na patelni na rozgrzanym oleju (180 stopni) z obu stron, na zloty kolor (2-3 minuty z kazdej strony). Podawaj na cieplo, opcjonalnie ze smietana."
+).
+
+przepis(szejk_truskawkowy, 
+  [sklad(truskawki, 100), sklad(mleko, 200), sklad(lody, 50)], 
+  1, 5,
+  "Zmiksuj wszystkie skladniki na gladkie, puszyste smoothie. Podaj od razu, schlodzone, z rurka lub kawalkiem owocu na szklance."
+).
+
+przepis(placuszki_bananowe, 
+  [sklad(banan, 100), sklad(maka, 100), sklad(mleko, 100), sklad(jajko, 50)], 
+  2, 10,
+  "Zmiksuj wszystkie skladniki na gladkie ciasto. Smaz placuszki na patelni na srednim ogniu (160 stopni) z obu stron, okolo 1-2 minuty, az sie zarumienia. Podawaj z syropem klonowym lub owocami."
+).
+
+przepis(kurczak_smazony, 
+  [sklad(kurczak, 500), sklad(sol, 5), sklad(pieprz, 5), sklad(olej, 100)], 
+  4, 30,
+  "Natrzyj kurczaka sola i pieprzem. Smaz na rozgrzanym oleju (160-180 stopni) na patelni, od czasu do czasu obracajac, az sie zarumieni i upiecze. Podawaj od razu, z ulubionymi dodatkami, takimi jak ziemniaki lub surowka."
+).
+
+przepis(owsianka, 
+  [sklad(platki_owsiane, 100), sklad(mleko, 250), sklad(miod, 20)], 
+  1, 5,
+  "Zalej platki owsiane mlekiem, gotuj kilka minut (90 stopni) od czasu do czasu mieszajac, a na samym koncu dodaj miod. Podawaj na cieplo, z owocami lub orzechami."
+).
+
+przepis(kanapki_z_pasta_jajeczna, 
+  [sklad(jajko, 100), sklad(majonez, 20), sklad(chleb, 2)], 
+  2, 10,
+  "Ugotuj jajka na twardo, obierz i pokroj na drobno. Wymieszaj z majonezem i dopraw do smaku. Posmaruj pasta kromki chleba i podawaj swieze."
+).
+
+przepis(zupa_pomidorowa, 
+  [sklad(pomidory, 500), sklad(woda, 1000), sklad(makaron, 100)], 
+  4, 30,
+  "Pomidory sparz i pokroj, zagotuj z woda. Dopraw sola, pieprzem i ulubionymi ziolami. Gotuj na srednim ogniu okolo 20 minut. Dodaj makaron i gotuj do miekkosci, okolo 8 minut. Podawaj goraca."
+).
+
+przepis(omlet_z_pomidorem,
+  [sklad(jajko, 150), sklad(pomidor, 100), sklad(olej, 10)],
+  1, 10,
+  "Rozgrzej olej na patelni. W misce roztrzep jajka, dodaj pokrojonego pomidora. Wlej mase na patelnie i smaz na srednim ogniu 5-7 minut az sie zetnie. Podawaj na cieplo."
+).
+
 przepis(pizza_margherita, 
   [sklad(maka, 300), sklad(woda, 180), sklad(ser_mozzarella, 200), sklad(pomidory, 150)], 
   4, 20,
-  "Przygotuj ciasto, wyrabiaj i odstaw do wyrosniecia na okolo 1 godzine. Rozwazkuj ciasto na placek, rozsmaruj sos pomidorowy, posyp mozzarella. Piecz w piekarniku nagrzanym do 220°C przez 12-15 minut az ciasto sie zarumieni, a ser roztopi."
+  "Przygotuj ciasto, wyrabiaj i odstaw do wyrosniecia na okolo 1 godzine. Rozwazkuj ciasto na placek, rozsmaruj sos pomidorowy, posyp mozzarella. Piecz w piekarniku nagrzanym do 220 stopni przez 12-15 minut az ciasto sie zarumieni, a ser roztopi."
 ).
 
 przepis(tortilla_z_kurczakiem, 
@@ -309,7 +377,6 @@ przepis(smoothie_owocowe,
   "Wszystkie skladniki zmiksuj na gladki koktajl. Podawaj schlodzony."
 ).
 
-
 przepis(pancakes, 
   [sklad(maka, 200), sklad(jajko, 100), sklad(mleko, 300)], 
   4, 20,
@@ -331,13 +398,13 @@ przepis(gulasz_wolowy,
 przepis(zapiekanka_makaronowa, 
   [sklad(makaron, 200), sklad(ser, 150), sklad(sos_pomidorowy, 200)], 
   4, 30,
-  "Ugotuj makaron al dente. Wymieszaj z sosem i polowa sera, przeloz do naczynia zaroodpornego. Posyp reszta sera i zapiekaj w 180°C przez 20 minut az ser sie zarumieni."
+  "Ugotuj makaron al dente. Wymieszaj z sosem i polowa sera, przeloz do naczynia zaroodpornego. Posyp reszta sera i zapiekaj w 180 stopni przez 20 minut az ser sie zarumieni."
 ).
 
 przepis(kurczak_pieczony, 
   [sklad(kurczak, 1000), sklad(przyprawy, 50)], 
   6, 90,
-  "Kurczaka natrzyj przyprawami, odstaw na 30 minut. Piecz w piekarniku nagrzanym do 180°C przez 1 godzine i 20 minut, az mieso bedzie soczyste i skorka chrupiaca."
+  "Kurczaka natrzyj przyprawami, odstaw na 30 minut. Piecz w piekarniku nagrzanym do 180 stopni przez 1 godzine i 20 minut, az mieso bedzie soczyste i skorka chrupiaca."
 ).
 
 przepis(jaglanka, 
@@ -349,9 +416,8 @@ przepis(jaglanka,
 przepis(tarta_owocowa, 
   [sklad(maka, 250), sklad(maslo, 150), sklad(owoce, 300)], 
   6, 45,
-  "Zagniec ciasto i wyloz nim forme. Piecz spod w 180°C przez 15 minut. Na podpieczony spod wyloz owoce i piecz kolejne 25-30 minut az ciasto sie zarumieni."
+  "Zagniec ciasto i wyloz nim forme. Piecz spod w 180 stopni przez 15 minut. Na podpieczony spod wyloz owoce i piecz kolejne 25-30 minut az ciasto sie zarumieni."
 ).
-
 
 przepis(risotto_z_pieczarkami, 
   [sklad(ryz, 200), sklad(pieczarki, 150), sklad(bulion, 500)], 
@@ -386,26 +452,27 @@ przepis(zupa_krem_brokulowa,
 przepis(tarta_szpinakowa, 
   [sklad(maka, 250), sklad(maslo, 150), sklad(szpinak, 200)], 
   4, 50,
-  "Zagniec ciasto i wyloz nim forme. Podsmaz szpinak i wymieszaj z jajkami oraz serem. Wylej farsz na spod i piecz w 180°C przez 35-40 minut az masa sie zetnie."
+  "Zagniec ciasto i wyloz nim forme. Podsmaz szpinak i wymieszaj z jajkami oraz serem. Wylej farsz na spod i piecz w 180 stopni przez 35-40 minut az masa sie zetnie."
 ).
 
 przepis(frytki_domowe, 
   [sklad(ziemniaki, 500), sklad(olej, 50)], 
   4, 40,
-  "Ziemniaki obierz i pokroj w slupki. Wymocz w zimnej wodzie, osusz. Smaz na glebokim oleju rozgrzanym do 180°C przez okolo 7-8 minut na zloty kolor. Odsacz na papierze. Podawaj gorace."
+  "Ziemniaki obierz i pokroj w slupki. Wymocz w zimnej wodzie, osusz. Smaz na glebokim oleju rozgrzanym do 180 stopni przez okolo 7-8 minut na zloty kolor. Odsacz na papierze. Podawaj gorace."
 ).
 
 przepis(makaron_z_sosem_pomidorowym, 
-  [sklad(pomidory, 400), sklad(czosnek, 2), sklad(cebula, 100),sklad(makaron,400)], 
+  [sklad(pomidory, 400), sklad(czosnek, 2), sklad(cebula, 100), sklad(makaron, 400)], 
   4, 30,
-  "Podsmaz cebule i czosnek, dodaj pomidory i dus na malym ogniu okolo 20 minut az sos zgestnieje. Dopraw sola, pieprzem i ziolami."
+  "Podsmaz cebule i czosnek, dodaj pomidory i dus na malym ogniu okolo 20 minut az sos zgestnieje. Dopraw sola, pieprzem i ziolami. Podawaj z makaronem."
 ).
 
 przepis(kalafior_w_bulce_tartej, 
   [sklad(kalafior, 500), sklad(bulka_tarta, 100), sklad(maslo, 50)], 
   4, 40,
-  "Kalafior ugotuj na poltwardo. Przygotuj bulke tarta z roztopionym maslem. Posyp kalafior mieszanka i zapiekaj w piekarniku 180°C przez 15 minut."
+  "Kalafior ugotuj na poltwardo. Przygotuj bulke tarta z roztopionym maslem. Posyp kalafior mieszanka i zapiekaj w piekarniku 180 stopni przez 15 minut."
 ).
+
 
 
 
