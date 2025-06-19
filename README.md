@@ -2,7 +2,7 @@
 
 Inteligentna książka kucharska dopasowuje przepisy do dostępnych w lodówce produktów, wykorzystując bazę Prologa, informacje o zamiennikach oraz szereg reguł.  
 Pokazuje przepisy, które można przygotować w całości, a także te, do których wystarczy dokupić jeden lub dwa składniki.
-Dla tych drugich wyświetla listę brakujących produktów wraz z wymaganymi ilościami, co pozwala użytkownikowi na łatwe uzupełnienie zapasów i większy wybór potraw do przygotowania.
+Dla tych drugich wyświetla listę brakujących produktów wraz z potrzebnymi ilościami, co pozwala użytkownikowi na łatwe uzupełnienie zapasów i większy wybór potraw do przygotowania.
 
 ---
 
@@ -11,7 +11,7 @@ Dla tych drugich wyświetla listę brakujących produktów wraz z wymaganymi ilo
 - Automatyczne dopasowanie przepisów do dostępnych składników  
 - Obsługa zamienników składników z częściowym uzupełnianiem ilości  
 - Obliczanie procentowego dopasowania przepisu  
-- Wskazywanie brakujących składników i ilości do dokupienia  
+- Wskazywanie brakujących składników i ilości do dokupienia,
 - Intuicyjny interfejs z paginacją pól do wpisywania składników  
 - Wyświetlanie przepisów w modalnych oknach dla lepszej czytelności  
 
