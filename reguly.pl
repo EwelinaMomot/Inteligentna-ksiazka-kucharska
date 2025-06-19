@@ -26,7 +26,13 @@ mam_lub_zamiennik(Skladnik, Ilosc) :-
     mam(Zamiennik, MamIloscZam),
     Sum is MamIlosc + MamIloscZam,
     Sum >= Ilosc.
-
+    
+% 4. Mam coś o podobnej nazwie – podobieństwo słowne
+mam_lub_zamiennik(Skladnik, Ilosc) :-
+    mam(InnySkladnik, MamIlosc),
+    podobne_slowa(Skladnik, InnySkladnik, 0.7),  
+    MamIlosc >= Ilosc. 
+    
 mam_wszystkie_skladniki([]).
 mam_wszystkie_skladniki([sklad(Skladnik, Ilosc)|Reszta]) :-
     mam_lub_zamiennik(Skladnik, Ilosc),
@@ -136,38 +142,63 @@ dostepne_skladniki_szczegolowo(Przepis, PorcjeDocelowe, Lista) :-
         (
             member(sklad(Nazwa, Potrzebna), SkladnikiPrzeliczone),
 
-            % Sprawdź ile masz oryginalnego składnika (0 jeśli brak)
+            % 1. Oryginał
             (mam(Nazwa, MamIlosc) -> true ; MamIlosc = 0),
-            
-            % Sprawdź zamiennik (jeśli jest)
+
+            % 2. Zamiennik
             (zamiennik(Nazwa, Zamiennik), mam(Zamiennik, MamZamIlosc) -> true ; (Zamiennik = none, MamZamIlosc = 0)),
 
+            % 3. Podobny składnik — teraz przez predykat:
             IloscOryg is min(MamIlosc, Potrzebna),
-            Reszta is Potrzebna - IloscOryg,
+            Reszta1 is Potrzebna - IloscOryg,
+            IloscZam is min(MamZamIlosc, Reszta1),
+            Reszta2 is Reszta1 - IloscZam,
+            (mam_lub_zamiennik_zwracajaca(Nazwa, Reszta2, Podobny-IloscPodobny) -> true ; (Podobny = none, IloscPodobny = 0)),
 
-            ( 
-                Reszta > 0,
-                Zamiennik \= none,
-                IloscZam is min(MamZamIlosc, Reszta),
-                % Zwróć oryginał jeśli >0
-                (IloscOryg > 0 -> Para1 = [Nazwa-IloscOryg] ; Para1 = []),
-                % Zwróć zamiennik jeśli >0
-                (IloscZam > 0 -> Para2 = [Zamiennik-IloscZam] ; Para2 = []),
-                append(Para1, Para2, Para)
-            ;
-                % Jeśli Reszta <=0 to zwróć tylko oryginał (jeśli >0)
-                Reszta =< 0,
-                (IloscOryg > 0 -> Para = [Nazwa-IloscOryg] ; Para = [])
-            ;
-
-                % Jeśli nie masz oryginału (0) ale masz zamiennik >= Potrzebna
-                MamIlosc = 0,
-                Zamiennik \= none,
-                MamZamIlosc >= Potrzebna,
-                Para = [Zamiennik-Potrzebna]
+            % Składanie listy dostępnych składników:
+            findall(Elt,
+                (
+                    (IloscOryg > 0 -> Elt = Nazwa-IloscOryg ; fail);
+                    (IloscZam > 0, Zamiennik \= none -> Elt = Zamiennik-IloscZam ; fail);
+                    (IloscPodobny > 0, Podobny \= none -> Elt = Podobny-IloscPodobny ; fail)
+                ),
+                Para
             )
         ),
         ListaList
     ),
     flatten(ListaList, Lista).
+
+
+
+mam_lub_zamiennik_zwracajaca(Szukany, IloscPotrzebna, Podobny-NIlosc) :-
+    mam(Podobny, MamIlosc),
+    podobne_slowa(Szukany, Podobny, 0.7),
+    Podobny \= Szukany,
+    NIlosc is min(MamIlosc, IloscPotrzebna),
+    NIlosc > 0.
+
+
+atom_na_litery(Atom, Litery) :-
+    atom_chars(Atom, Litery).
+
+% Liczy ile znaków na tych samych pozycjach się zgadza
+licz_wspolne_litery([], _, 0).
+licz_wspolne_litery(_, [], 0).
+licz_wspolne_litery([H1|T1], [H2|T2], Liczba) :-
+    licz_wspolne_litery(T1, T2, LiczbaReszta),
+    (H1 = H2 -> Liczba is LiczbaReszta + 1 ; Liczba = LiczbaReszta).
+
+% Podobienstwo: wspólne litery / długość krótszego słowa
+podobne_slowa(S1, S2, Prog) :-
+    atom(S1), atom(S2),  
+    atom_chars(S1, L1),
+    atom_chars(S2, L2),
+    licz_wspolne_litery(L1, L2, Wspolne),
+    length(L1, D1),
+    length(L2, D2),
+    MinD is min(D1, D2),
+    MinD > 0,  
+    Similarity is Wspolne / MinD,
+    Similarity >= Prog.
 
