@@ -144,9 +144,10 @@ def index():
 
                 original_przepisy_skladniki = {}
                 for procent, nazwa in przepisy_100:
-                    skladniki = dostepne_skladniki(prolog, nazwa, porcje)
-                    original_przepisy_skladniki[nazwa] = skladniki
-
+                    nazwa_prolog=nazwa.replace(" ","_")
+                    skladniki = dostepne_skladniki(prolog, nazwa_prolog, porcje)
+                    original_przepisy_skladniki[nazwa_prolog] = skladniki
+                    
                 przepisy_skladniki = {}
                 for nazwa, lista_str in original_przepisy_skladniki.items():
                     skladniki_parsed = [parse_skladnik_str(s) for s in lista_str]
