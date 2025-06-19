@@ -258,7 +258,7 @@ przepis(salatka_tunczykowa,
 przepis(kopytka, 
   [sklad(ziemniaki, 500), sklad(maka, 100), sklad(jajko, 100)], 
   4, 30,
-  "Ugotowane ziemniaki przeciśnij przez praske, wymieszaj z maka i jajkiem na gladkie ciasto. Formuj waleczki i kroj na kawalki. Gotuj w osolonej wodzie az wyplyna, okolo 3-5 minut. Podawaj z maslem lub sosem."
+  "Ugotowane ziemniaki przecisnij przez praske, wymieszaj z maka i jajkiem na gladkie ciasto. Formuj waleczki i kroj na kawalki. Gotuj w osolonej wodzie az wyplyna, okolo 3-5 minut. Podawaj z maslem lub sosem."
 ).
 
 przepis(sernik_new_york, 
